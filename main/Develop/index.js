@@ -1,28 +1,38 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generate = require('/.utils/generatePage')
+const generate = require('/.utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
-const questions = [
-            {
-                type: 'input',
+const questions = () => {
+    return inquirer.prompt([
+        {
+        type: 'input',
                 name: 'title',
-                message='What is the title of your project?',  
+                message='What is the title of your project? (Required)',
+                validate: titleInput => {
+                    if (titleInput) {
+                        return true;
+                    } else {
+                        console.log('Please enter a title for your project!');
+                        return false;
+                    }
+                }
             },
             {
                 type: 'input',
-                name: 'title',
-                message='What is the title of your project?',  
+                name: 'badge',
+                message='What is the licence badge for your project?', 
+                
             },
             {
                 type: 'input',
-                name: 'title',
-                message='What is the title of your project?',  
+                name: 'description',
+                message='Please provide a brief description of your project',  
             },
             {
                 type: 'input',
-                name: 'title',
+                name: '',
                 message='What is the title of your project?',  
             },
             {
