@@ -1,23 +1,61 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generate = require('/.utils/generatePage')
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer.prompt{
-        [
             {
                 type: 'input',
-                message='What is the title of your project?',
                 name: 'title',
-                validate: (value) => { 
-                    if(value){return true
-                    } else {
-                    return 'Please enter a title to continue'
-                }
+                message='What is the title of your project?',  
             },
-];
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message='What is the title of your project?',  
+            },
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
