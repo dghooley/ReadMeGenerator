@@ -21,24 +21,25 @@ const questions = () => {
             },
             {
                 type: 'input',
-                name: 'badge',
-                message='What is the licence badge for your project?', 
-                
+                name: 'installation',
+                message='Please enter your installation instructions!', 
+
             },
             {
                 type: 'input',
-                name: 'description',
-                message='Please provide a brief description of your project',  
+                name: 'usage',
+                message='Please enter your usage information',  
+            },
+            {
+                type: 'list',
+                name: 'license',
+                message='Select your license!',  
+                choices: ["MIT", "Mozilla", "Apachee"],
             },
             {
                 type: 'input',
-                name: '',
-                message='What is the title of your project?',  
-            },
-            {
-                type: 'input',
-                name: 'title',
-                message='What is the title of your project?',  
+                name: 'test',
+                message='Please enter your test information!',  
             },
             {
                 type: 'input',
@@ -68,7 +69,13 @@ const questions = () => {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+        }
+        console.log("success!")
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
