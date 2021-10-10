@@ -9,12 +9,12 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message:'What is the title of your project? (Required)',
+            message:'What is the project title?',
             validate: titleInput => {
                 if (titleInput) {
                     return true;
                 } else {
-                    console.log('Please enter a title for your project!');
+                    console.log('Please enter a title for your project:');
                     return false;
                 }
             },
@@ -22,50 +22,39 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message:'Please enter a brief description of your project!',
+            message:'Write a brief description of your project:',
 
         },
         {
             type: 'input',
             name: 'installation',
-            message:'Please enter your installation instructions',
+            message:'Describe the installation process (not required)',
         },
         {
             type: 'input',
             name: 'usage',
-            message:'Please enter your usage information!',
+            message:'What is this project usage for?',
         },
-/*        {
-            type: 'confirm',
-            name: 'credits',
-            message='Would you like to add any collaborators?',
-            default: false,
-        },*/
         {
             type: 'list',
             name: 'license',
-            message:'Select your license!',
-            choices: ["MIT", "Mozilla", "Apachee"],
+            message:'Please select a licencse for your project:',
+            choices: ["MIT", "ISC", "Apache", "GNU GPLv2"],
         },
         {
             type: 'input',
             name: 'test',
-            message:'Please enter your text information!',
+            message:'Will this project require a test?',
         },
         {
             type: 'input',
             name: 'gitHub',
-            message:'Please enter your GitHub username!',
+            message:'Please enter your GitHub username:',
         },
         {
             type: 'input',
             name: 'email',
-            message:'Please enter your email address!',
-        },
-        {
-            type: 'input',
-            name: 'additional',
-            message:'Feel free to reach me on',
+            message:'Please enter your email address:',
         },
     ]);
 }    
