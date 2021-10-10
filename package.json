@@ -1,23 +1,14 @@
 {
-  "name": "readmegenerator",
+  "name": "static-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dghooley/ReadMeGenerator.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dghooley/ReadMeGenerator/issues"
-  },
-  "homepage": "https://github.com/dghooley/ReadMeGenerator#readme",
   "dependencies": {
-    "form-data": "^4.0.0",
-    "inquirer": "^8.2.0"
+    "inquirer": "^6.5.2"
   }
 }

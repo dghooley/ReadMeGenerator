@@ -87,7 +87,7 @@ const questions = () => {
                 console.log(answers);
                 var output = generateMarkdown(answers);
                 console.log(output);
-                writeToFile("../README.md", output);
+                writeToFile("../Develop/README.md", output);
                 if(answers.collaborators) {
                     inquirer.prompt([
                     {
