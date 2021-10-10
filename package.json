@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dghooley/ReadMeGenerator#readme",
   "dependencies": {
+    "form-data": "^4.0.0",
     "inquirer": "^8.2.0"
   }
 }

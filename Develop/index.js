@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('../utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -9,7 +9,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message='What is the title of your project? (Required)',
+            message:'What is the title of your project? (Required)',
             validate: titleInput => {
                 if (titleInput) {
                     return true;
@@ -22,18 +22,18 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message='Please enter a brief description of your project!',
+            message:'Please enter a brief description of your project!',
 
         },
         {
             type: 'input',
             name: 'installation',
-            message='Please enter your installation instructions',
+            message:'Please enter your installation instructions',
         },
         {
             type: 'input',
             name: 'usage',
-            message='Please enter your usage information!',
+            message:'Please enter your usage information!',
         },
 /*        {
             type: 'confirm',
@@ -44,28 +44,28 @@ const questions = () => {
         {
             type: 'list',
             name: 'license',
-            message='Select your license!',
+            message:'Select your license!',
             choices: ["MIT", "Mozilla", "Apachee"],
         },
         {
             type: 'input',
             name: 'test',
-            message='Please enter your text information!',
+            message:'Please enter your text information!',
         },
         {
             type: 'input',
             name: 'gitHub',
-            message='Please enter your GitHub username!',
+            message:'Please enter your GitHub username!',
         },
         {
             type: 'input',
             name: 'email',
-            message='Please enter your email address!',
+            message:'Please enter your email address!',
         },
         {
             type: 'input',
             name: 'additional',
-            message='Feel free to reach me on',
+            message:'Feel free to reach me on',
         },
     ]);
 }    
