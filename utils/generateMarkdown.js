@@ -38,16 +38,11 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## How to Contribute
-  [Contributor Covenant](https://www.contributor-covenant.org/)
-  ${data.contributing}
-
   ## Tests
   ${data.testing}
 
   ## Questions?
   ### Reach me here:
-  [${data.username}](https://github.com/${data.username})
   ${data.email}`;
 }
 
